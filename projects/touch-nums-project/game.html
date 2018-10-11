@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Touch-Nums</title>
+</head>
+
+<body onload="levelInit(4)">
+
+    <div class="levels">
+        <button onclick="levelInit(4)">Easy(16)</button>
+        <button onclick="levelInit(5)">Hard(25)</button>
+        <button onclick="levelInit(6)">Extreme(36)</button>
+    </div>
+    
+    <div class="stpr-and-nwgm"><!--suggestions to any other name?-->
+        <div class="stopper">
+            <h5>Game time:</h5>
+            <p class='time'>00:00</p> 
+            <!-- Better with h5 -->
+        </div>
+        <button onclick="newGame()" class="new-game">New Game</button>
+    </div>
+
+    <table class="table-container" border="1" cellpadding="10">
+        <tbody class="table-body"></tbody>
+    </table>
+
+    <a href="index.html"><button class="return-btn">Return To Main Menu</button></a>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

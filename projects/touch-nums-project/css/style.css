@@ -1,0 +1,141 @@
+body{
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat:repeat-y;
+}
+
+
+
+.game-title, .main-title{
+    border-radius: 125px;
+    background: pink;
+    text-align: center;
+    font-family: indie Flower,sans-serif;
+    font-size: 60px;
+    margin-top: 15%;
+    text-shadow: 2px 2px 4px white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-title{
+    margin-top: 5%;
+
+}
+
+.sub-title{
+   text-align: center;
+   background-color: lightgray;
+   width: 80%;
+   margin-left: 50%;
+   transform: translate(-50%,-50%); 
+   font-family: indie Flower, sans-serif;
+   text-shadow: 2px 2px 4px #000000;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+   padding:5px;
+}
+
+
+.start-btn, .return-btn{
+font-family: indie Flower, sans-serif;
+text-align: center;
+margin-left: 50%;
+transform: translate(-50%,-50%);
+margin-top: 5%;
+font-size: 25px;
+background-color: lavender;
+padding: 15px; 
+text-shadow: 2px 2px 4px #000000;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+cursor: pointer;
+}
+
+.return-btn{
+    margin-top: 330px;
+}
+a .start-btn:hover{
+background-color:powderblue;
+}
+
+a .return-btn:hover{
+    background-color: powderblue;
+    }
+
+
+.levels{
+    display: flex;
+}
+
+.levels button{
+    font-family: indie Flower, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 80%;
+    text-align: center;
+    border: 5px inset papayawhip;
+    background-color: lightpink;
+    margin: auto ;
+    margin-top: 5%;
+}
+
+.levels button:hover{
+    background-color: bisque;
+}
+.stpr-and-nwgm{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 5%;
+}
+.stopper{
+    text-align: center;
+    border: 5px inset papayawhip;
+    background-color: lightpink;
+    width: 25%;
+    font-family: indie Flower, sans-serif;
+}
+
+.stopper h5, .time{
+    margin: 5%;
+}
+
+.stopper h5{
+    font-size: 20px;
+}
+
+.stopper .time{
+    font-size: 22px;
+}
+
+.new-game {
+    font-family: indie Flower, sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    width: 25%;
+    text-align: center;
+    border: 5px inset papayawhip;
+    background-color: lightpink;
+}
+
+.new-game:hover{
+    background-color: blanchedalmond;
+}
+
+table{
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    margin-top: 160px;
+    width: 60%;
+    border: 2px;
+}
+
+.table-body td:hover{
+  background-color: lightgray;
+}
+.table-body td{
+    border-radius: 125px;
+    background-color: aliceblue;
+    font-family: indie Flower, sans-serif;
+    font-size: 25px;
+}

@@ -1,0 +1,189 @@
+
+body{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.title{
+    font-family: Audiowide, indie Flower, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.smiley{
+    margin: auto;
+    font-size: 30px;
+    border: 2px inset papayawhip;
+    cursor: pointer;
+    display: block;
+ }
+
+table{
+    margin: auto;
+    border: 2px inset darkgrey; 
+    /* border-collapse: collapse; */
+}
+
+.table-body td {
+    border: 2px outset gray;
+    padding: 5px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.table-body td:hover{
+    background-color: blanchedalmond;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    background-color:papayawhip ;
+    border: 5px inset papayawhip;
+    width: 500px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.second-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;	
+
+}
+
+.stopper , .num-mines{
+    color: red;
+    text-align: center;
+    background-color: black;
+    width:33%;
+    font-family: Monoton, indie Flower, sans-serif;
+}
+
+.stopper h5, .num-mines h5{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.best-scores h6, .levels h6{
+    margin-top: 5px;
+   color:black;
+   margin-bottom: 5px;
+}
+.best-scores button, .levels button{
+   font-size: 25px;
+   padding: 5px;
+   font-family: indie Flower, sans-serif;
+   border: 5px inset papayawhip;
+   background-color: gray;
+   text-align: center;
+   width: 150px; 
+   text-shadow: 2px 2px 4px white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.levels button:hover, .table-body td:hover{
+    cursor: pointer;
+}
+
+.best-scores span{
+   font-family: cursive;
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+.messege{
+    background-color: black;
+    color:red;
+    text-align: center;
+    font-family: Monoton, indie Flower, sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    border-radius: 125px;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*design the num neighbors */
+.design{
+color:blue;
+font-weight:900;
+font-family:cursive;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    /*IN DEV TOOLS ON IPHONE YOU NEED TO SCROLL DOWN   */
+    .title{
+        display: none;
+    }
+
+
+    .container{
+        transform: translate(0);
+        width: 90%;
+        margin: auto;
+    }
+
+    .second-container{
+        grid-template-rows: auto auto;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+    
+
+    }
+    .table-container{
+        grid-row-end: 1;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .table-body td:hover{
+        background-color:none;
+    }
+
+   
+  
+    .levels, .best-scores{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 5px;
+
+    }
+
+    .best-scores button{
+        height: 54px;
+    }
+
+  
+
+    .stopper h5, .num-mines h5{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .messege{
+        display: none;
+    }
+  
+}
+
+
+
