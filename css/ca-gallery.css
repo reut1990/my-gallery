@@ -40,6 +40,12 @@ section h3.section-subheading {
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+#preview-img{
+   height: 250px;
+   width: fit-content; 
+}
+
 @media (min-width: 768px) {
     section {
         padding: 150px 0;

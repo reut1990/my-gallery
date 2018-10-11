@@ -29,13 +29,64 @@
   <div class="offcanvas-btn" onClick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
+  
   <aside class="offcanvas-aside">
 
-  <!-- Contact -->
-  <section id="contact">
-    <h4>Contact Me</h4>
-  </section>
-    
+    <!-- Contact -->
+    <section id="contact">
+      <!-- Material form contact -->
+      <div class="card">
+
+        <h5 class="card-header info-color white-text text-center py-4">
+          <strong>Contact us</strong>
+        </h5>
+
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0">
+
+          <!-- Form -->
+          <form class="text-center" style="color: #757575;">
+
+            <!-- Name -->
+            <div class="md-form mt-3">
+              <input type="text" id="materialContactFormName" class="form-control">
+              <label for="materialContactFormName">Name</label>
+            </div>
+
+            <!-- E-mail -->
+            <div class="md-form">
+              <input type="email" id="materialContactFormEmail" class="form-control">
+              <label for="materialContactFormEmail">E-mail</label>
+            </div>
+
+            <!-- Subject -->
+            <span>Subject</span>
+            <select class="mdb-select">
+              <option value="" disabled>Choose option</option>
+              <option value="1" selected>Feedback</option>
+              <option value="2">Report a bug</option>
+              <option value="3">Feature request</option>
+              <option value="4">Feature request</option>
+            </select>
+
+            <!--Message-->
+            <div class="md-form">
+              <textarea type="text" id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+              <label for="materialContactFormMessage">Message</label>
+            </div>
+
+            <!-- Send button -->
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+
+          </form>
+          <!-- Form -->
+
+        </div>
+
+      </div>
+      <!-- Material form contact -->
+    </section>
+
   </aside>
 
   <!-- Navigation -->
@@ -44,8 +95,8 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-        </button>
+        <i class="fa fa-bars"></i>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -88,30 +139,30 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
           <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+            inventore harum ex magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
           <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+            inventore harum ex magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
           <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+            inventore harum ex magni, dicta impedit.</p>
         </div>
       </div>
     </div>
@@ -218,33 +269,32 @@
 
   <!-- Me -->
   <section class="bg-light" id="me" style="padding: 0px;">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/about/reut.jpg" alt="">
-            <h4>Reut Levin</h4>
-            <p class="text-muted">Front-End Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/reut.levin.7">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/reut-levin-aa8452107/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-8 flex-align-center">
-            <p class="large text-muted  about-description">
-              Friendly and kind. Dream on making the world a better place. 
-              I believe every thing is possible if you just believe it.
-            </p>    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/about/reut.jpg" alt="">
+          <h4>Reut Levin</h4>
+          <p class="text-muted">Front-End Developer</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/reut.levin.7">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/reut-levin-aa8452107/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="col-sm-8 flex-align-center">
+        <p class="large text-muted  about-description">
+          Friendly and kind. Dream on making the world a better place. I believe every thing is possible if you just believe it.
+        </p>
+      </div>
+    </div>
   </section>
 
 
@@ -261,23 +311,23 @@
           <ul class="list-inline social-buttons flex-align-center">
             <li class="list-inline-item">
               <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
+                <i class="fa fa-twitter"></i>
+              </a>
             </li>
             <li class="list-inline-item flex-align-center">
               <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
+                <i class="fa fa-facebook"></i>
+              </a>
             </li>
             <li class="list-inline-item">
               <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
+                <i class="fa fa-linkedin"></i>
+              </a>
             </li>
           </ul>
         </div>
         <div class="col-md-4 flex-align-center">
-            <ul class="list-inline quicklinks">
+          <ul class="list-inline quicklinks">
             <li class="list-inline-item">
               <a href="#">More Me</a>
             </li>
@@ -291,7 +341,39 @@
   </footer>
 
   <!-- Portfolio Modals -->
-  <div id="modals-container"></div>
+  <div id="modals-container">
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details-->
+                  <h2 id="project-name"></h2>
+                  <p id="project-title" class="item-intro text-muted"></p>
+                  <img id="project-img" class="img-fluid d-block mx-auto" src="" alt="">
+                  <p id="project-description"> </p>
+                  <ul class="list-inline">
+                    <li id="project-date"></li>
+                    <li id="project-labels"></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modal 1 -->
   <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -305,8 +387,8 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body"> -->
-                <!-- Project Details Go Here -->
-                <!-- <h2>Project Name</h2>
+  <!-- Project Details Go Here -->
+  <!-- <h2>Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
@@ -327,7 +409,7 @@
       </div>
     </div>
   </div> -->
- 
+
   <!-- Modal 2 -->
   <!-- <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -342,7 +424,7 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                  Project Details Go Here -->
-                <!-- <h2>Project Name</h2>
+  <!-- <h2>Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
@@ -362,7 +444,7 @@
         </div>
       </div>
     </div>
-  </div> --> 
+  </div> -->
 
   <!-- Modal 3 -->
   <!-- <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -378,7 +460,7 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 --Project Details Go Here -->
-                <!-- <h2>Project Name</h2>
+  <!-- <h2>Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
@@ -386,7 +468,7 @@
                   maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li> -->
-                  <!-- <li>Client: Finish</li>
+  <!-- <li>Client: Finish</li>
                   <li>Category: Identity</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -398,7 +480,7 @@
         </div>
       </div>
     </div>
-  </div> --> 
+  </div> -->
 
   <!-- Modal 4 -->
   <!-- <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
@@ -413,8 +495,8 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body"> -->
-                <!-- Project Details Go Here -->
-                <!-- <h2>Project Name</h2>
+  <!-- Project Details Go Here -->
+  <!-- <h2>Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
@@ -431,7 +513,7 @@
               </div>
             </div>
           </div> -->
-        <!-- </div>
+  <!-- </div>
       </div>
     </div>
   </div> -->
@@ -449,8 +531,8 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body"> -->
-                <!-- Project Details Go Here -->
-                <!-- <h2>Project Name</h2>
+  <!-- Project Details Go Here -->
+  <!-- <h2>Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
@@ -485,8 +567,8 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body"> -->
-                <!-- Project Details Go Here -->
-                <!-- <h2>Project Name</h2>
+  <!-- Project Details Go Here -->
+  <!-- <h2>Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
@@ -506,7 +588,7 @@
         </div>
       </div>
     </div>
-  </div> --> 
+  </div> -->
 
   <!-- <img src="img/portfolio/03-thumbnail.jpg" alt="" class="src"> -->
   <!-- Bootstrap core JavaScript -->
