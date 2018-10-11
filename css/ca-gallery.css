@@ -46,6 +46,10 @@ section h3.section-subheading {
    width: fit-content; 
 }
 
+#live-demo{
+    margin: 10px 0;
+}
+
 @media (min-width: 768px) {
     section {
         padding: 150px 0;
@@ -320,7 +324,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 15px;
 }
 .portfolio-modal .modal-content p {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .portfolio-modal .modal-content p.item-intro {
     font-size: 16px;

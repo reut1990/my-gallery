@@ -29,7 +29,7 @@
   <div class="offcanvas-btn" onClick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
-  
+
   <aside class="offcanvas-aside">
 
     <!-- Contact -->
@@ -49,34 +49,24 @@
 
             <!-- Name -->
             <div class="md-form mt-3">
-              <input type="text" id="materialContactFormName" class="form-control">
+              <input type="text" id="name-form" class="form-control">
               <label for="materialContactFormName">Name</label>
             </div>
 
             <!-- E-mail -->
             <div class="md-form">
-              <input type="email" id="materialContactFormEmail" class="form-control">
-              <label for="materialContactFormEmail">E-mail</label>
+              <input type="email" id="email-form" class="form-control">
+              <label for="materialContactFormEmail" id="email">E-mail</label>
             </div>
-
-            <!-- Subject -->
-            <span>Subject</span>
-            <select class="mdb-select">
-              <option value="" disabled>Choose option</option>
-              <option value="1" selected>Feedback</option>
-              <option value="2">Report a bug</option>
-              <option value="3">Feature request</option>
-              <option value="4">Feature request</option>
-            </select>
 
             <!--Message-->
             <div class="md-form">
-              <textarea type="text" id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+              <textarea type="text" id="message-form" class="form-control md-textarea" rows="3"></textarea>
               <label for="materialContactFormMessage">Message</label>
             </div>
 
             <!-- Send button -->
-            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="button" onclick="contact()">Send</button>
 
           </form>
           <!-- Form -->
@@ -109,7 +99,7 @@
             <a class="nav-link js-scroll-trigger" href="#me">Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" onclick="openCanvas()" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -359,13 +349,17 @@
                   <p id="project-title" class="item-intro text-muted"></p>
                   <img id="project-img" class="img-fluid d-block mx-auto" src="" alt="">
                   <p id="project-description"> </p>
+                  <a class="btn btn-success" id="live-demo" href="">Watch it live</a>
                   <ul class="list-inline">
                     <li id="project-date"></li>
                     <li id="project-labels"></li>
                   </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <div class="d-flex flex-column">
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Close Project</button>
+                  </div>
+
                 </div>
               </div>
             </div>

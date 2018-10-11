@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Balls</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init()" onkeydown="handleKey(event)">
+
+  <h1 class="main-title">Baba Balls</h1>
+
+  <div class="game-container">
+    <div class="container">
+      <h5>Balls Collected: <span class="balls">0</span> </h5><span> | </span>
+      <h3 class="instructions">Collect those <span>baba</span> Balls......</h3>
+    </div>
+
+    <table>
+      <tbody class="board"></tbody>
+    </table>
+
+    <div class="win-container">
+      <h4 class='messege-won'>You Won!</h4>
+      <button class="reset" onclick="resetGame()">New Game</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,8 @@ var gProjs = [{
     url: "/projects/sprint-1-mines-weeper-responsive",
     publishedAt: 'October 18',
     labels: ["Matrixes", "gameBoard"],
-    img: "img/portfolio/minesweeper.png"
+    img: "img/portfolio/minesweeper.png",
+    liveDemo:"projects/sprint-1-mines-weeper-responsive/index.html"
 },
 {
     id: "touch-nums-project",
@@ -18,7 +19,20 @@ var gProjs = [{
     url: "/projects/touch-nums-project",
     publishedAt: 'October 18',
     labels: ["Matrixes", "keyboard events"],
-    img: 'img/portfolio/touch-num.jpg'
+    img: 'img/portfolio/touch-num.jpg',
+    liveDemo:"projects/touch-nums-project/index.html"
+
+},
+{
+    id: "ball-Board-project-with nice design",
+    name: "Ball-board",
+    title: "Ball-board",
+    desc: "Collect all those balls",
+    url: "/projects/ball-Board-project-with nice design",
+    publishedAt: 'October 18',
+    labels: ["Matrixes", "keyboard events"],
+    img: 'img/portfolio/ball-board.jpg',
+    liveDemo:"projects/ball-Board-project-with nice design/ball-board/index.html"
 
 }];
 
@@ -27,6 +41,11 @@ function initPage() {
 }
 
 
+function contact() {
+    var userName=document.querySelector('#name-form');
+    var message=document.querySelector('#message-form');
+    window.location='https://mail.google.com/mail/?view=cm&fs=1&to=reut1990@gmail.com&su='+userName.value+"&body="+message.value+"'";
+}
 
 function renderProjs() {
     var elPortfolioContainer = document.querySelector('#portfolio-container');
@@ -99,13 +118,14 @@ function renderProjs() {
 
 function projClicked(idx) {
     var proj = gProjs[idx];
-    console.log(proj, 'work');
+    // console.log(proj, 'work');
     $('#project-name').text(proj.name);
     $('#project-title').text(proj.title);
     $('#project-img').attr("src", proj.img);
     $('#project-description').text(proj.desc);
     $('#project-date').text('Date:' + proj.publishedAt);
     $('#project-labels').text('Labels:' + proj.labels);
+    $('#live-demo').attr("href", proj.liveDemo);
 
 
     // console.log(idx);
