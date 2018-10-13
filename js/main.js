@@ -8,7 +8,7 @@ var gProjs = [{
     url: "/projects/sprint-1-mines-weeper-responsive",
     publishedAt: 'October 18',
     labels: ["Matrixes", "gameBoard"],
-    img: "/img/portfolio/mines.jpg",
+    img: "img/portfolio/mines.jpg",
     liveDemo:"projects/sprint-1-mines-weeper-responsive/index.html"
 },
 {
