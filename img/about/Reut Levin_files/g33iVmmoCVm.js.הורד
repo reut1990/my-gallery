@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["D7VTI"]); }
-
-__d("PinnedCommentEventCreateSubscription",["BaseGraphQLSubscription","PinnedCommentEventCreateSubscriptionWebGraphQLSubscription","uuid"],(function(a,b,c,d,e,f){a=babelHelpers["extends"]({},b("BaseGraphQLSubscription"),{_getTopic:function(a){return"gqls/"+this._getSubscriptionCallName()+"/video_id_"+a},_getQueryID:function(){return b("PinnedCommentEventCreateSubscriptionWebGraphQLSubscription").getDocID()},_getQueryParameters:function(a){return{input:JSON.stringify({client_subscription_id:b("uuid")(),video_id:a})}},_getSubscriptionCallName:function(){return"pinned_comment_event_create_subscribe"}});e.exports=a}),null);
