@@ -15,7 +15,7 @@ var gProjs = [{
     id: "touch-nums-project",
     name: "Touch Nums",
     title: "Touch Nums",
-    desc: "Click the numbers by its order as past as you can",
+    desc: "Click the numbers by its order as fast as you can",
     url: "/projects/touch-nums-project",
     publishedAt: 'October 18',
     labels: ["Matrixes", "keyboard events"],
