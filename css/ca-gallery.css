@@ -1,6 +1,8 @@
 body {
     overflow-x: hidden;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 100%;
+    margin: none;
 }
 p {
     line-height: 1.75;
