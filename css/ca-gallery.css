@@ -58,7 +58,16 @@ section h3.section-subheading {
     width: 200px;
     height: 140px;
 }
+.container{
+    padding-right: 15px;
+}
+
+
 @media (min-width: 768px) {
+    
+    .offcanvas-btn{
+    display: flex;
+   }
     section {
         padding: 100px 0;
     }
@@ -89,12 +98,12 @@ body {
     width: 50px;
     background: #fe36e6;
     border-radius: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     margin-left: 0;
     transition: all 0.3s ease;
+    display: none;
 }
 .offcanvas-btn-open {
     margin-left: 30vw;
@@ -199,12 +208,12 @@ header.masthead {
     background-image: url("../img/about/background.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
+    background-position: center center; 
+    background-size: cover;
+   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: -2%;
 }
 header.masthead .intro-text {
     padding-top: 150px;
