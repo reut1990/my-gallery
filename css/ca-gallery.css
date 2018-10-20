@@ -64,10 +64,6 @@ section h3.section-subheading {
     padding-right: 15px;
 }
 
-#nav-container{
-    width: 90%;
-}
-
 @media (min-width: 768px) {
     
     .offcanvas-btn{
@@ -782,4 +778,8 @@ fieldset[disabled] .btn-xl:hover {
 .btn-xl .badge {
     color: #fe36e6;
     background-color: white;
+}
+
+#nav-container{
+    width: 90%;
 }
