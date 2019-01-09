@@ -1,0 +1,141 @@
+
+@import url(../lib/bs4/css/bootstrap.min.css);
+body{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+h1 {
+ font-family: Gloria Hallelujah, sans-serif;
+ background-color: lightcoral;
+ text-align: center;
+ padding: 10px;
+ font-size: 40px;
+    
+    /* color: var(--danger); */
+}
+.books-container{
+    margin: auto;
+    display: table;
+    margin-top: 10px;
+    font-family:Gloria Hallelujah, sans-serif;
+    font-weight: 900;
+}
+/* #t-img{
+    height: 100px;
+    width: 100px;
+} */
+
+#new-book{
+    cursor: pointer;
+    margin: auto;
+    font-family: Gloria Hallelujah, sans-serif;
+    display: list-item;
+}
+
+#rate{
+ display: flex;
+ flex-direction: row;
+ align-self: center;
+ padding:2px 5px;
+}
+
+#rate-btn{
+    margin:5px;
+}
+
+.img img{
+    height: 200px;
+    width: 200px;
+}
+
+#actions{
+    display: flex;
+    flex-direction: column;
+}
+
+.table-img{
+    display: none;
+}
+
+#t-img{
+       width: 0%;
+       height: 0%;
+}
+
+#pic-on-hover{
+    height:100px;
+    width: 100px;
+}
+
+a>div { display: none; }
+
+a:hover>div { 
+    display: table;
+ }
+.id{
+    display: none;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+.modal{
+    direction:initial;
+}
+
+th {
+    text-align: center;
+}
+
+#lang{
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin: 20px auto 10px auto;
+}
+
+.tooltip-pic-img {
+    width: 100px;
+    height: auto;
+}
+
+@media(min-width:420px){/* tablet  */
+    .id{
+        display: block;
+    }
+#pic-on-over{
+    width: 150px;
+    height:120px;
+    padding:5px;
+}
+    
+}
+@media(min-width:700px){/* desktop */
+    #actions{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+@media(min-width:1024px){/* desktop */
+    
+    .table-img{
+        display:block;
+        
+    }
+    
+    a:hover>div { 
+        display: none;
+     }
+     
+    #t-img{
+        width: 120px;
+        height: 120px;
+ }
+
+ 
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lib/bs4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <title>Book-shop</title>
+</head>
+
+<body onload="init()">
+  <h1 data-trans="title" >Welcome To My Shop</h1>
+  <button id="new-book" class="bg-primary" onclick="readAndAddNewBook()" data-trans="new-book">Create New Book</button>
+  <select id="lang" onchange="onSetLang(this.value)">
+    <option value="en" data-trans="filter-en">English</option>
+    <option value="he" data-trans="filter-he">Hebrew</option>
+</select>
+
+  <main class="books-container"> </main>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="summery"></p>
+          <div id="rate">
+            <button id="rate-btn" class="btn-success" onclick="decreaseRate(en)">-</button>
+            <div id="curr-rate"></div>
+            <button id="rate-btn" class="btn-success" onclick="increaseRate(this)">+</button>
+          </div>
+          <picture class="img"></picture>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="lib/bs4/js/bootstrap.bundle.min.js"></script>
+  <script src="js/book-main.js"></script>
+  <script src="js/book-service.js"></script>
+  <script src="js/i18n-service.js"></script>
+  <script src="js/util-service.js"></script>
+</body>
+
+</html>

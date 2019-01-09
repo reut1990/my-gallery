@@ -59,9 +59,13 @@ section h3.section-subheading {
 .specialty{
     width: 200px;
     height: 140px;
+  
 }
 .container{
     padding-right: 15px;
+}
+.col-md-4{
+    padding: 10px;
 }
 
 @media (min-width: 768px) {

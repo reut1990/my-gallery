@@ -34,6 +34,30 @@ var gProjs = [{
     img: 'img/portfolio/ball-board.jpg',
     liveDemo:"projects/ball-Board-project-with nice design/ball-board/index.html"
 
+},
+{
+    id: "GuessMe-project",
+    name: "Guess-Me",
+    title: "Guess-Me",
+    desc: "Answer the qeustions and the computer will learn your answers",
+    url: "/projects/GuessMe-project",
+    publishedAt: 'October 18',
+    labels: ["Jquery", "objects"],
+    img: 'img/portfolio/guessMe.png',
+    liveDemo:"/projects/GuessMe-project/index.html"
+
+},
+{
+    id: "project-bookShop",
+    name: "BookShop",
+    title: "Book Shop",
+    desc: "Books store with nice addition",
+    url: "/projects/project-bookShop",
+    publishedAt: 'October 18',
+    labels: ["i18n"],
+    img: 'img/portfolio/bookstore.gif',
+    liveDemo:"projects/project-bookShop/index.html"
+
 }];
 
 function initPage() {
